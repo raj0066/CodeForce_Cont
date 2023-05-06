@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int t,i,flag=0 ;
+    string s,s1 ="codeforces";
+    cin>>t;
+    while(t--)
+    {
+        cin>>s;
+        for(i=0;i<10;i++)
+        {
+            if(s1[i]!=s[i]){
+                flag++;
+            }
+        }
+        cout<<flag<<endl;
+        flag =0;
+    }
+    return 0;
+}
