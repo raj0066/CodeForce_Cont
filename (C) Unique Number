@@ -1,0 +1,47 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void X()
+{
+    long long n,m,k,a=0,b=0,sum=0,cnt1=0,cnt2=0,ans=0;
+    cin>>n;
+    vector <int> vi;
+    sum=0;m=9;
+
+
+    while(sum<n && m>0)
+    {
+        vi.push_back(min(n-sum,m));
+        sum += m;
+        m--;
+    }
+    if(sum<n)
+    {
+        cout<<"-1\n";
+    }
+    else{
+        reverse(vi.begin(),vi.end());
+        for(int i:vi)
+        {
+            cout<<i;
+        }
+    }
+    cout<<"\n";
+
+}
+
+int main()
+{
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    int t=1;
+    cin>>t;
+   while(t--)
+    {
+        X();
+    }
+}
+
+/*
+
+*/
