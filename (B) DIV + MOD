@@ -1,0 +1,34 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void X()
+{
+    long long n,m,k,a=0,b=0,sum=0,cnt1=0,cnt2=0,ans=0,cnt3=0;
+    string s; char ch;
+    cin>>n>>m>>k;
+    vector <long long> vi;
+
+    ans = m/k + m%k;
+    a = m/k * k-1;
+    if(a>=n)
+    {
+        ans = max(ans,a/k + a%k);
+    }
+    cout<<ans<<endl;
+}
+
+int main()
+{
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    int t=1;
+    cin>>t;
+   while(t--)
+    {
+        X();
+    }
+}
+
+/*
+
+*/
