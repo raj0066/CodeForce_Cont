@@ -9,7 +9,7 @@ void X()
     vector <long long> vi;
 
     ans = m/k + m%k;
-    a = m/k * k-1;
+    a = (m/k) * k-1;
     if(a>=n)
     {
         ans = max(ans,a/k + a%k);
