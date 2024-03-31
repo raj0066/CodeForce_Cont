@@ -1,0 +1,59 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void X()
+{
+    long long n,m,k,a=0,b=0,sum=0,cnt1=0,cnt2=0,ans=0,cnt3=0;
+    string s; char ch;
+    vector <string> vi;
+    bool f= false;
+
+    cin>>n>>m>>k;
+
+    /*if(m==1 && k==1)
+    {
+        for(int i=0;i<n;i++){
+            s = 'a'+i;
+            vi.push_back(s);
+        }
+        f = true;
+    }
+    if(f)
+    {
+    for(int i=0;i<n;i++){
+        cout<<vi[i];
+    }
+        cout<<"\n";
+        return ;
+    }*/
+
+    for(int i=0;i<n;){
+        for(int j=0;j<k;j++)
+        {
+         s = 'a'+j;
+         vi.push_back(s);
+        }
+        i += k;
+    }
+    for(int i=0;i<n;i++){
+        cout<<vi[i];
+    }
+    cout<<"\n";
+
+}
+
+int main()
+{
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    int t=1;
+    cin>>t;
+   while(t--)
+    {
+        X();
+    }
+}
+
+/*
+
+*/
